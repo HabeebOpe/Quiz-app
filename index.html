@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Quiz App - BEEB</title>
+   
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/1c36f4658d.js" crossorigin="anonymous">
+   </script>
+
+</head>
+
+<body>
+    <div class="gen-container">
+        <div class="loading">
+            <div class="instructions">
+                <div class="ins-one">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <h3>Questions </h3>
+                    <span>- 3</span>
+                </div>
+                <div class="ins-one">
+                    <i class="fa-solid fa-caret-right"></i>
+                    <h3>Time </h3> 
+                    <span>- 15 seconds</span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="loader">
+                <div class="dot"></div>
+            </div>
+            <div class="wait">
+                <h3>LOADING TEST</h3>
+            </div>
+        </div>
+        
+        
+        <div class="quest-container">
+            <div class="nav-time">
+            <div class="nav">
+                <span class="open">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <span class="close">
+                    <i class="fa-solid fa-multiply"></i>
+                </span>
+                <div class="quit">
+                    <div id="quit-quiz">Quit Quiz</div>
+                </div>
+            </div>
+            <div class="time">
+                <span>00 :</span>
+                <span id="count"> 23 </span>
+                <span> sec</span>
+            </div>
+        </div>
+        
+            <div class="display">
+                <div class="quest-slide">
+                    <div class="question-1">
+                        <header>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <h3>Question 1</h3>
+                        </header>
+                        <div class="quest-bod">
+                            <div class="question">
+                                The first woman to climb Mount Everest ?
+                            </div>
+                            <div class="answer">
+                                <ul>
+                    <li class="quest-one-wrong-one">
+                        <span>Mrs Valentina Tereshkova
+                        </span>
+                    </li>
+                    <li class="quest-one-correct">
+                        <span>Mrs. Junko Tabei
+                        </span>
+                    </li>
+                    <li class="quest-one-wrong-two">
+                        <span>Maria Estela Person
+                        </span>
+                    </li>
+                    <li class="quest-one-wrong-three">
+                        <span>Mrs. Srimavo Bhandarnaike
+                        </span>
+                    </li>
+                    </ul>
+                            </div>
+                            <div class="next-prev">                                <button class="next1" id="next">
+                                    NEXT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-1">
+                        <header>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <h3>Question 2</h3>
+                        </header>
+                        <div class="quest-bod">
+                            <div class="question">
+                                First human to walk on the Moon ?
+                            </div>
+                            <div class="answer">
+                                <ul>
+                                    <li class="quest-two-wrong-one">
+                                        <span>Ann Bancroft
+                                        </span>
+                                    </li>
+                                    <li class="quest-two-wrong-two">
+                                        <span>Lakpa Sherpa
+                                        </span>
+                                    </li>
+                                    <li class="quest-two-wrong-three">
+                                        <span>Alexei ArkhovichLeonov
+                                        </span>
+                                    </li>
+                                    <li class="quest-two-correct">
+                                        <span> Neil Armstrong Apollo
+                                        </span>
+                                    </li>
+                                </ul>                            </div>
+                            <div class="next-prev">
+                                <button class="prev2" id="prev">
+                                    PREV
+                                </button>
+                                <button class="next2" id="next">
+                                    NEXT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-1">
+                        <header>
+                            <i class="fa-solid fa-caret-right"></i>
+                            <h3>Question 3</h3>
+                        </header>
+                        <div class="quest-bod">
+                            <div class="question">
+                                Who is the father of Genetics ?
+                            </div>
+                            <div class="answer">
+                                <ul>
+                                    <li class="quest-three-correct">
+                                        <span>Gregor Mendel
+                                        </span>
+                                    </li>
+                                    <li class="quest-three-wrong-one">
+                                        <span>Albert Einstein
+                                        </span>
+                                    </li>
+                                    <li class="quest-three-wrong-two">
+                                        <span>Robert Owen
+                                        </span>
+                                    </li>
+                                    <li class="quest-three-wrong-three">
+                                        <span>Sebastian Franklin
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="next-prev">
+                                <button class="prev3" id="prev">
+                                    PREV
+                                </button>
+                                <button class="submit" id="submit">
+                                    SUBMIT
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-bgn">
+        <div class="modal">
+            <h2 id="quit-confirm">Are you sure you want to submit?</h2>
+            <div class="confirm-submit-btn">
+                <button id="cancel">Cancel</button>
+                <button id="show-result">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div class="score-sheet">
+        <div class="score-sheet-header">
+            <h2>Score Sheet</h2>
+        </div>
+        <div class="score-sheet-sec">
+            
+            <div class="res">
+                <h3>Question 1</h3>
+                <div class="rest res-one">
+                    <span id="answer-one">No Answer</span>
+                    <span class="check">
+                        <i class="fa-solid fa-check check-one"></i>
+                        <i class="fa-solid fa-xmark xmark-one"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="res">
+                <h3>Question 2</h3>
+                <div class="rest res-two">
+                    <span id="answer-two">No Answer</span>
+                    <span class="check">
+                        <i class="fa-solid fa-check check-two"></i>
+                        <i class="fa-solid fa-xmark xmark-two"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="res">
+                <h3>Question 3</h3>
+                <div class="rest res-three">
+                    <span id="answer-three">No Answer</span>
+                    <span class="check">
+                        <i class="fa-solid fa-check check-three"></i>
+                        <i class="fa-solid fa-xmark xmark-three"></i>
+                   </span>
+                </div>
+            </div>
+            <div class="core">
+                <div class="drop-down">
+                    <h3>Correction</h3>
+                    <span id="drop"><i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </div>
+                <div class="corec">
+                    <div class="correction">
+                        <h4>First woman to climb Mount Everest ?
+                        </h4>
+                        <p>Mrs. Junko Tabei
+                        </p>
+                    </div>
+                    <div class="correction">
+                        <h4> First human to walk on the Moon ?
+                        </h4>
+                        <p>Neil Armstrong Apollo
+                        </p>
+                    </div>
+                    <div class="correction">
+                        <h4> Who is the father of Genetics ?
+                        </h4>
+                        <p>Gregor Mendel
+                        </p>
+                    </div>
+                </div>
+                <button id="retake">RETAKE TEST </button>
+            </div>
+    </div>
+    
+ <script src="main.js"></script> 
+</body>
+
+</html>
